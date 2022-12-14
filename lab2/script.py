@@ -22,7 +22,7 @@ host = args.host
 
 print("We are looking for MTU to", host)
 
-Left = 1
+Left = 36
 Right = 2000
 
 while(Right - Left > 1):
@@ -37,4 +37,4 @@ while(Right - Left > 1):
         print("FAILURE, code: ", code)
         os._exit(0)
 
-print("MTU to", host, "is", Left)
+print("MTU to", host, "is", Left + 28)
